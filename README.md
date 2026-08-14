@@ -1,7 +1,7 @@
 
 ### MrWog
 
-[GitHubPagesURL]https://cit82.github.io/paulm-pub/
+[GitHubPagesURL](https://cit82.github.io/paulm-pub/)
 
 - high resoluition images take a long time to load
 - Compressing images reduces size and time to load
