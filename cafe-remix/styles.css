@@ -1,5 +1,9 @@
 body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  background-image: url('the_shed.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: sans-serif;
   padding: 20px;
 }
