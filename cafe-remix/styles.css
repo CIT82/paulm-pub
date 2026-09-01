@@ -3,7 +3,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  font-family: sans-serif;
+  font-family: 'Lobster', cursive;
   padding: 20px;
 }
 
@@ -52,7 +52,7 @@ hr {
 }
 
 h1, h2 {
-  font-family: Impact, serif;
+  font-family: 'Lobster', cursive;
 }
 
 .item p {
