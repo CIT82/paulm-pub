@@ -1,10 +1,9 @@
 body {
-  background-image: url('the_shed.png');
+  background-image: url(the_shed_2.png);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: sans-serif;
+  background-position: center;
+  font-family: 'Lobster', cursive;
   padding: 20px;
 }
 
@@ -28,7 +27,7 @@ h1, h2, p {
 
 .menu {
   width: 80%;
-  background-color: burlywood;
+  background-color: rgba(192, 192, 192, 0.8);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -44,8 +43,8 @@ img {
 
 hr {
   height: 2px;
-  background-color: brown;
-  border-color: brown;
+  background-color: white;
+  border-color: white;
 }
 
 .bottom-line {
@@ -53,7 +52,7 @@ hr {
 }
 
 h1, h2 {
-  font-family: Impact, serif;
+  font-family: 'Lobster', cursive;
 }
 
 .item p {
