@@ -1,0 +1,14 @@
+.card-body {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.card{
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
