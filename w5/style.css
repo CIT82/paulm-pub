@@ -12,3 +12,18 @@
     max-height: 200px;
     object-fit: cover;
 }
+
+body {
+  background: linear-gradient(135deg, #e9d9c4, #e6e4d8, #dce8ee);
+  color: #222;
+}
+
+.btn-primary {
+  background-color: #5a5a5a;
+  border-color: #5a5a5a;
+}
+
+.btn-primary:hover {
+  background-color: #3f3f3f;
+  border-color: #3f3f3f;
+}
