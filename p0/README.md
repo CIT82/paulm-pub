@@ -53,3 +53,23 @@
 * **Research:**  
   - `page-section` this class sets the top and bottom margins to 5rem.  
   - `clearfix` this class allows the element to wrap around floated child elements.
+
+## Section 3: Site Inventory (Bottom Half)
+
+### 4. Promise Section (CTA)
+* **Line Numbers:** 53–67  
+* **Top-Level Classes:** `page-section`, `cta`
+
+* **Research:**  
+  - `page-section` this class sets the top and bottom margins to 5rem.   
+  - `cta` this class sets the top/bottom padding and background color.
+
+## Section 5: Footer
+* **Line Numbers:** 68–70  
+* **Top-Level Classes:** `footer`, `text-faded`, `text-center`, `py-5`  
+
+* **Research:**  
+  - `footer` this class assigns the Bootstrap element `footer` to this item.
+  - `text-faded` this class applies theme-specific muted color to the text.
+  - `text-center` this class centers the text content.
+  - `py-5` this class adds top and bottom padding of 3rem
