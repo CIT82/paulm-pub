@@ -1,7 +1,7 @@
 # Project 0: Template Analysis (Part 1)
 
-**Template Name:** Business Casual
-**Bootstrap Version:** 5.2.3 (JS bundle loaded via CDN; CSS bundled inside theme stylesheet)
+* **Template Name:** Business Casual
+* **Bootstrap Version:** 5.2.3 (JS bundle loaded via CDN; CSS bundled inside theme stylesheet)
 
 ---
 
