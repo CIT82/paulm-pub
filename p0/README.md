@@ -64,7 +64,7 @@
   - `page-section` this class sets the top and bottom margins to 5rem.   
   - `cta` this class sets the top/bottom padding and background color.
 
-## Section 5: Footer
+### Section 5: Footer
 * **Line Numbers:** 68–70  
 * **Top-Level Classes:** `footer`, `text-faded`, `text-center`, `py-5`  
 
@@ -73,3 +73,13 @@
   - `text-faded` this class applies theme-specific muted color to the text.
   - `text-center` this class centers the text content.
   - `py-5` this class adds top and bottom padding of 3rem
+
+### Section 6: JavaScript Dependencies
+
+* **Line Number:** 72 and 74
+* **Actual Script Tag:**
+  - ```html
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="js/scripts.js"></script>
+    ```
+  -These tags load Bootstrap and the custom JavaScript after the page loads
