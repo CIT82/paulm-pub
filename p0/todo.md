@@ -17,6 +17,7 @@
 
 7. [ ] Add a bulk speciality blends menu with pricing page that links from menu page
 8. [ ] Add a page where users can view logo shirts, hoodies...etc.
+9. [ ] Update the navbar so the current page is highlighted in the navbar.
 
 ### Content Replacement
 1. [ ] Change the Products page into a menus page
