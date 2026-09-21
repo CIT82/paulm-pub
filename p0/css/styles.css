@@ -11028,3 +11028,21 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+#breadcrumb {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+  z-index: 9999;
+}
+
+#breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#breadcrumb a:hover {
+  text-decoration: underline;
+}

@@ -44,6 +44,7 @@
 3. [ ] Research a color pallete that also includes subdued greens for an agriculture vibe
 4. [ ] Make the navbar and page header content sticky
 4. [ ] Make sure buttons and active content are uniform
+5. [X] Add a breadcrumb feature to the upper right of allpages
 
 ### Cleanup
 1. [ ] Generally change pictures to fit my AG/rural coffee shop theme
