@@ -39,7 +39,7 @@
 17. [ ] Generally look for some more AG, rural, warm, organic type pictures for all content including backgrounds
 
 ### Design & Bootstrap
-1. [ ] Separate Bootstrap CSS from custom CSS and load Bootstrap CSS from CDN
+1. [X] Separate Bootstrap CSS from custom CSS and load Bootstrap CSS from CDN
 2. [ ] Add page transitions (research other JS libriries)
 3. [ ] Research a color pallete that also includes subdued greens for an agriculture vibe
 4. [ ] Make the navbar and page header content sticky
