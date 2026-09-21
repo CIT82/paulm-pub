@@ -54,6 +54,12 @@ p {
   background-color: #f6e1c5;
 }
 
+.btn-faded {
+  background-color: #e6a756;
+  color: #2f170f;
+  border: none;
+}
+
 .btn-xl {
   font-weight: 700;
   font-size: 0.8rem;
