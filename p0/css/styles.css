@@ -55,9 +55,14 @@ p {
 }
 
 .btn-faded {
-  background-color: #e6a756;
-  color: #2f170f;
-  border: none;
+    background-color: #e6a756;   /* your theme’s gold */
+    color: #fff;
+    border: none;
+}
+
+.btn-faded:hover {
+    background-color: #b88645;   /* darker gold */
+    color: #fff;
 }
 
 .btn-xl {
