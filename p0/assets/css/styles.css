@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg");
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -55,13 +55,13 @@ p {
 }
 
 .btn-faded {
-    background-color: #e6a756;   /* your theme’s gold */
+    background-color: #e6a756;
     color: #fff;
     border: none;
 }
 
 .btn-faded:hover {
-    background-color: #b88645;   /* darker gold */
+    background-color: #b88645;
     color: #fff;
 }
 
@@ -228,4 +228,37 @@ p {
 
 #breadcrumb a:hover {
   text-decoration: underline;
+}
+
+.sitemap a {
+    color: #6c757d;          /* Bootstrap "secondary" */
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-size: 1.1rem;
+}
+
+.sitemap a:hover {
+    color: #c59d5f;          /* your theme’s gold accent */
+    text-decoration: underline;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);          /* Bootstrap secondary */
+    text-decoration: none;
+    padding: 0 6px;
+    font-weight: 800;
+}
+
+.footer-link:hover {
+    color: rgba(255, 255, 255, 0.4);          /* your gold accent */
+    text-decoration: underline;
+}
+
+.btn-disabled {
+  background-color: #6c6c6c !important;   /* medium grey */
+  border-color: #6c6c6c !important;
+  color: #ffffff !important;
+  opacity: 0.7;
+  cursor: not-allowed;
+  pointer-events: none;
 }
