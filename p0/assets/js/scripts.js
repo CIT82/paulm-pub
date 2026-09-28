@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Home link
+  // Home link ALWAYS points to your real hosted root
   let breadcrumbHTML = `<a href="${repoRoot}/index.html">Home</a>`;
 
   // Build links inside repo
