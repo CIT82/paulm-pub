@@ -2,13 +2,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const breadcrumbContainer = document.getElementById("breadcrumb");
   if (!breadcrumbContainer) return;
 
-  let pathParts = window.location.pathname.split("/").filter(Boolean);
-  const rootIndex = pathParts.indexOf("p0");
+  // Full path split
+  const fullParts = window.location.pathname.split("/").filter(Boolean);
 
-  if (rootIndex !== -1) {
-    pathParts = pathParts.slice(rootIndex + 1);
+  // Detect repo root: everything up to and including "p0"
+  const p0Index = fullParts.indexOf("p0");
+  if (p0Index === -1) {
+    breadcrumbContainer.style.display = "none";
+    return;
   }
 
+  // Repo root path (works locally AND hosted)
+  const repoRoot = "/" + fullParts.slice(0, p0Index + 1).join("/");
+
+  // Path inside repo
+  let pathParts = fullParts.slice(p0Index + 1);
+
+  // Remove duplicate folder/page names
   if (pathParts.length >= 2) {
     const folder = pathParts[pathParts.length - 2];
     const file = pathParts[pathParts.length - 1].replace(".html", "");
@@ -17,62 +27,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  if (pathParts.length === 1 && pathParts[0] === "index.html") {
+  // Hide breadcrumb on home page
+  if (pathParts.length === 0 || pathParts[0] === "index.html") {
     breadcrumbContainer.style.display = "none";
     return;
   }
 
-  let breadcrumbHTML = `<a href="/p0/index.html">Home</a>`;
-  let currentPath = "/p0";
+  // Home link
+  let breadcrumbHTML = `<a href="${repoRoot}/index.html">Home</a>`;
 
-  pathParts.forEach((part, index) => {
-    const isFolder = !part.endsWith(".html");
+  // Build links inside repo
+  let currentPath = repoRoot;
 
-    const label = part
-      .replace(".html", "")
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, c => c.toUpperCase());
+  pathParts.forEach(part => {
+    const isFile = part.endsWith(".html");
 
-    if (isFolder) {
-      const folderPage = `${part}/${part}.html`;
-      breadcrumbHTML += ` / <a href="${currentPath}/${folderPage}">${label}</a>`;
+    if (!isFile) {
       currentPath += `/${part}`;
+      const folderPage = `${currentPath}/${part}.html`;
+
+      const label = part.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      breadcrumbHTML += ` / <a href="${folderPage}">${label}</a>`;
     } else {
+      const label = part
+        .replace(".html", "")
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, c => c.toUpperCase());
+
       breadcrumbHTML += ` / ${label}`;
     }
   });
 
   breadcrumbContainer.innerHTML = breadcrumbHTML;
-});
-
-// -----------------------------
-// Contact Page Logic
-// -----------------------------
-document.addEventListener("DOMContentLoaded", () => {
-  const sendBtn = document.getElementById("sendBtn");
-  const sentMsg = document.getElementById("sentMsg");
-
-  if (!sendBtn) return; // Only run on contact page
-
-  sendBtn.addEventListener("click", () => {
-    const email = document.getElementById("email").value.trim();
-    const teamMember = document.getElementById("teamMember").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if (!email || !teamMember || !message) {
-      alert("Please complete all required fields.");
-      return;
-    }
-
-    sendBtn.style.display = "none";
-    sentMsg.style.display = "block";
-
-    document.getElementById("teamMember").value = "";
-    document.getElementById("message").value = "";
-
-    setTimeout(() => {
-      sentMsg.style.display = "none";
-      sendBtn.style.display = "inline-block";
-    }, 5000);
-  });
 });
