@@ -11,6 +11,7 @@
 6. [X] Ensure the site map is on all pages
 7. [X] Add a blog page
 8. [X] Add a contact page
+9. [X] Add a favicon
 
 * **Menu (pricing only no online purchasing/ordering)**
 
