@@ -41,11 +41,15 @@
 14. [X] Bring in pictures of Baklava (our speciality)
 15. [X] Create bakery menu content
 16. [X] Create speciality blends content
+17. [ ] Generally look for some more AG, rural, warm, organic type pictures for all content including backgrounds
 
 ### Design & Bootstrap
 1. [X] Separate Bootstrap CSS from custom CSS and load Bootstrap CSS from CDN
-2. [X] Make sure buttons and active content are uniform
-3. [X] Add a breadcrumb feature to the upper right of allpages
+2. [ ] Add page transitions (research other JS libriries)
+3. [ ] Research a color pallete that also includes subdued greens for an agriculture vibe
+4. [ ] Make the navbar and page header content sticky
+4. [X] Make sure buttons and active content are uniform
+5. [X] Add a breadcrumb feature to the upper right of allpages
 
 ### Cleanup
 1. [X] Generally change pictures to fit my AG/rural coffee shop theme
