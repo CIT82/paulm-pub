@@ -57,3 +57,4 @@
 3. [X] Make sure to investigate dead content and clean up broken links
 4. [X] Make sure images are optimized
 5. [X] Remove and cleanup commented code
+6. [X] Make sure that images have alt text
